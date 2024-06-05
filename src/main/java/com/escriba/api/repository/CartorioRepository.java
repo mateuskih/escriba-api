@@ -7,7 +7,6 @@ import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.escriba.api.dto.CartorioAtribuicoesDTO;
@@ -36,6 +35,5 @@ public interface CartorioRepository extends JpaRepository<Cartorio, Integer> {
 
     boolean existsById(String id);
 
-    @Query("SELECT c FROM Cartorio c WHERE c.nome = :nome")
-    Optional<Cartorio> findByNome(@Param("nome") String nome);
+    Optional<Cartorio> findByNome(String nome);
 }
