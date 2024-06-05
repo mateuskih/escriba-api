@@ -1,0 +1,5 @@
+CREATE TABLE situacoes (
+    id VARCHAR(20) NOT NULL,
+    nome VARCHAR(50) NOT NULL UNIQUE,
+    PRIMARY KEY (id)
+);
