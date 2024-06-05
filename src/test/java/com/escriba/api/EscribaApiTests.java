@@ -1,4 +1,4 @@
-package com.mjv.projetofinal;
+package com.escriba.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
